@@ -1,0 +1,41 @@
+{
+  "name": "itmosoft/laravel-customer-groups",
+  "description": "Customer segmentation and group membership management for Laravel applications.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "illuminate/database": "^12.0|^13.0",
+    "illuminate/support": "^12.0|^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.0|^11.0",
+    "phpunit/phpunit": "^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ItmoSoft\\CustomerGroups\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ItmoSoft\\CustomerGroups\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ItmoSoft\\CustomerGroups\\CustomerGroupsServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test:coverage": "phpunit --coverage-text"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "suggest": {
+    "itmosoft/laravel-customers": "Recommended when integrating with the ITMOSOFT customer domain package."
+  }
+}
