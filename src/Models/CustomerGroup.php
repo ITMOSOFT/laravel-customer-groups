@@ -11,6 +11,10 @@ class CustomerGroup extends Model
 {
     protected $guarded = ['id'];
 
+    protected $attributes = [
+        'is_active' => true,
+    ];
+
     protected function casts(): array
     {
         return [
